@@ -7,11 +7,21 @@
 <body bgcolor="#00697F">
 <center>
 <br><br><br>
-<!--<img src="splashscreen_250_210.png" alt="Technoee" width="250" height="210"/>-->
-<h1 style="text-align:center;font-family: Arial, font-size: 30px !important; color:white">TECHNOEE</h1>
+<img src="splashscreen_250_210.png" alt="Technoee" width="250" height="210"/>
+<!--<h1 style="text-align:center;font-family: Arial, font-size: 30px !important; color:white">TECHNOEE</h1>-->
 <br><br><br>
 <img src="ajax-loader.gif" alt="Carregando..."/>
 </center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script language="javascript">
+    if(typeof jQuery != "undefined")
+    {
+        document.location = 'http://www.oeecdc.com/web/index.php'
+    }
+    else
+        document.location = 'offline.html';
+</script>
+<!--
 <script>
 function ifServerOnline(ifOnline, ifOffline)
 {
@@ -38,5 +48,6 @@ function ()
 	document.location = 'offline.html';
 });
 </script>
+-->
 </body>
 </html>
